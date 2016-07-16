@@ -1,0 +1,20 @@
+﻿page {
+    padding: 25;
+}
+
+button {
+    width: 200
+}
+
+label {
+    horizontal-align: center;
+    text-align: center;
+}
+
+.fail {
+    color: darkred;
+}
+
+.success {
+    color: darkgreen;
+}

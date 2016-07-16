@@ -1,0 +1,16 @@
+/*
+ *  Native dependencies
+ * - com.android.support:design: required for the Snackbar
+ */
+dependencies {
+  compile 'com.android.support:design:23.3.0'
+}
+
+android {
+  defaultConfig {
+    generatedDensities = []
+  }
+  aaptOptions {
+    additionalParameters "--no-version-vectors"
+  }
+}

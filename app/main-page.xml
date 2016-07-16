@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onLoaded">
+  <Page.actionBar>
+    <ActionBar title="NativeScript ConfirmCredential"></ActionBar>
+  </Page.actionBar>
+  <StackLayout verticalAlignment="center">
+    <Image src="res://android_robot" stretch="true" horizontalAlignment="center" />
+    <Label text="{{ compatibilityStatus.msg }}" textWrap="true" cssClass="{{ compatibilityStatus.compatible ? 'success' : 'fail' }}"/>
+    <Button text="Authenticate" tap="{{ onTap }}" visibility="{{ compatibilityStatus.compatible ? 'visible' : 'collapsed' }}" />
+    <Label text="{{ authStatus.msg }}" textWrap="true" visibility="{{ (compatibilityStatus.compatible && compatibilityStatus.compatible !== 'almost') ? 'visible' : 'collapsed' }}"/>
+  </StackLayout>
+</Page>
